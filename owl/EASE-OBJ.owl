@@ -1386,45 +1386,6 @@
     
 
 
-    <!-- http://www.ease-crc.org/ont/EASE-OBJ.owl#Deposit -->
-
-    <owl:Class rdf:about="http://www.ease-crc.org/ont/EASE-OBJ.owl#Deposit">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE-OBJ.owl#Instrument"/>
-        <rdfs:comment>An object ontop which others are put to e.g. store them, or to place them in a meaningful way for future activities.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/EASE-OBJ.owl#DepositedObject -->
-
-    <owl:Class rdf:about="http://www.ease-crc.org/ont/EASE-OBJ.owl#DepositedObject">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE-OBJ.owl#Patient"/>
-        <rdfs:comment>An object placed ontop of another one.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ease-crc.org/ont/EASE-OBJ.owl#Deposition -->
-
-    <owl:Class rdf:about="http://www.ease-crc.org/ont/EASE-OBJ.owl#Deposition">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE-OBJ.owl#Disposition"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/EASE-OBJ.owl#affordsBearer"/>
-                <owl:allValuesFrom rdf:resource="http://www.ease-crc.org/ont/EASE-OBJ.owl#Deposit"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/EASE-OBJ.owl#affordsTrigger"/>
-                <owl:allValuesFrom rdf:resource="http://www.ease-crc.org/ont/EASE-OBJ.owl#DepositedObject"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>The disposition to support objects.</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://www.ease-crc.org/ont/EASE-OBJ.owl#DependentPlace -->
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/EASE-OBJ.owl#DependentPlace">
