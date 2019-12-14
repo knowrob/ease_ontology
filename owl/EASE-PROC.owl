@@ -331,6 +331,14 @@ Note, most of the physical Entities we are concerned with are actually arrangeme
     </owl:Class>
     
 
+    <!-- http://www.ease-crc.org/ont/EASE-PROC.owl#Fixation -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/EASE-PROC.owl#Fixation">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/EASE-PROC.owl#Contact"/>
+        <rdfs:comment>A contact event where one object is fixed to another.</rdfs:comment>
+    </owl:Class>
+    
+
 
     <!-- http://www.ease-crc.org/ont/EASE-PROC.owl#Fixation -->
 
